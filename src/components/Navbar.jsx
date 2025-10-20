@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Navbar = () => {
   return (
     <div>
@@ -5,7 +7,9 @@ const Navbar = () => {
       <ul>
         <li>Home</li>
         <li>About</li>
+        <Link to={"/contacts"}>
         <li>Contacts</li>
+        </Link>
         <li>Location</li>
         <li>Login</li>
       </ul>

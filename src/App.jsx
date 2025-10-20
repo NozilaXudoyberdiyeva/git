@@ -1,6 +1,7 @@
 import React from 'react'
 import { Route, Routes } from 'react-router-dom'
 import Layout from './pages/Layout'
+import Contacts from './pages/Contacts'
 
 const App = () => {
   return (
@@ -8,7 +9,7 @@ const App = () => {
     <Routes>
     
       <Route path='/' element={<Layout />}>
-
+      <Route path='contacts' element={<Contacts/>}/>
       </Route>
     </Routes>
       
