@@ -7,11 +7,15 @@ import Login from "./pages/Login";
 import React from 'react'
 import { Route, Routes } from 'react-router-dom'
 import Layout from './pages/Layout'
+
+import Contacts from './pages/Contacts'
+
 import About from './pages/About'
 
 import Home from './pages/Home'
 
 import Location from './pages/Location'
+
 
 
 
@@ -34,9 +38,13 @@ const App = () => {
     <Routes>
       <Route path='/' element={<Layout />}>
 
+      <Route path='contacts' element={<Contacts/>}/>
+
+
         <Route path='/home' element={<Home />} />
 
       <Route path='location' element={<Location />}/>
+
 
       </Route>
     </Routes>
